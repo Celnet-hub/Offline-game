@@ -13,11 +13,54 @@
 }
 
 #character {
-  width: 40px;
-  height: 60px;
+  width: 15px;
+  height: 70px;
   border: 1px solid seagreen;
   background-color: rgb(185, 185, 218);
   border-radius: 10px;
   position: relative;
-  top: 540px;  /*height in #game (600) - height(60) of the charater */
+  top: 530px; /*height in #game (600) - height(60) of the charater */
+  
+}
+
+.animate{
+    animation: jump 3s;
+}
+
+@keyframes jump {
+  0% {
+    top: 530px;
+  }
+  30% {
+    top: 70px;
+  }
+  70%{
+      top: 90px;
+  }
+  100%{
+      top: 530px;
+  }
+}
+
+
+#block {
+  width: 40px;
+  height: 90px;
+  border: 1px solid seagreen;
+  background-color: rgb(185, 185, 218);
+  border-radius: 10px;
+  position: relative;
+  top: 435px;
+  left: 560px;
+  animation: block 3s infinite;
+}
+
+/*adding animation*/
+@keyframes block {
+  0% {
+    left: 560px;
+  }
+  100% {
+    left: -80px;
+  }
 }
