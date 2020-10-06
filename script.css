@@ -52,7 +52,7 @@
   position: relative;
   top: 435px;
   left: 560px;
-  animation: block 3s infinite;
+  animation: block 3s infinite 5s;
 }
 
 /*adding animation*/
